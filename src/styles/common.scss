@@ -1,0 +1,30 @@
+@import './variables';
+
+body {
+  background-color: black;
+  color: $primary;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.error {
+  font-size: 20px;
+  color: red;
+}
+
+.tile {
+  height: 80px;
+  min-width: 200px;
+
+  a {
+    font-size: 18px;
+    color: $primary;
+    cursor: pointer;
+  }
+}
+
+.character-list {
+  max-width: $maxWidth;
+  margin: auto;
+}

@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import { SortConstants } from '../../constants/constants';
+import { SortConstants } from '../../constants/labelMappings';
 
 const SortBar = (props) => {
 

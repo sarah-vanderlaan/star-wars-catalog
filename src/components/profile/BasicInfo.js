@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import { PersonConstants, Units, Gender } from '../../constants/constants';
+import { PersonConstants, Units, Gender } from '../../constants/labelMappings';
 
 const BasicInfo = ({ person }) => {
 

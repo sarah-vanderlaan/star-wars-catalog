@@ -8,7 +8,8 @@ Uses https://api.graphcms.com/relay/v1/swapi
 1) Clone the project. `git clone https://github.com/sarah-vanderlaan/star-wars-catalog.git`
 2) Navigate into `star-wars-catalog` folder
 2) Install dependencies `npm install`
-3) Run app with `npm start`.  Find app at localhost:3000. This command watches all files - everytime that code is rebuilt, linting runs and tests run.
+3) Run app with `npm start`. This command watches all files - everytime that code is rebuilt, linting runs and tests run.
+4) Find app at localhost:3000. 
 
 ## Features
 
@@ -27,16 +28,33 @@ Uses https://api.graphcms.com/relay/v1/swapi
 
 ### RESPONSIVE DESIGN:
 Renders nicely in both desktop and mobile view:
+#### Desktop:
+![alt text](https://raw.githubusercontent.com/sarah-vanderlaan/star-wars-catalog/master/imgs/desktop.png)
+![alt text](https://raw.githubusercontent.com/sarah-vanderlaan/star-wars-catalog/master/imgs/profilePage.png)
+#### Mobile:
+![alt text](https://raw.githubusercontent.com/sarah-vanderlaan/star-wars-catalog/master/imgs/mainMobile.png)
+![alt text](https://raw.githubusercontent.com/sarah-vanderlaan/star-wars-catalog/master/imgs/profileMobile.png)
 
 ### LOADING STATE:
-Displays loading dots when loading any data from graphQL.
+Displays loading dots when loading any data from graphQL:
+![alt text](https://raw.githubusercontent.com/sarah-vanderlaan/star-wars-catalog/master/imgs/loading.png)
+* Also shows smaller loading dots on profile page when loading
 
 ### ERROR STATE:
-Handles graphQL errors.  Also handles null values for character properties (eg unknown height, planet, weight, etc) and shows user when no data returned for specific filter search.
+Handles graphQL errors:   
+![alt text](https://raw.githubusercontent.com/sarah-vanderlaan/star-wars-catalog/master/imgs/graphQLError.png)
+Also handles data-specific edge cases:
+1) Handles null values for character properties (eg unknown height, planet, weight, etc) display as Unknown. Also shows user a message when character has no planet or no "friends" on planet.
+![alt text](https://raw.githubusercontent.com/sarah-vanderlaan/star-wars-catalog/master/imgs/unknown.png)
+2) Shows user a message when no data returned that matches search:
+![alt text](https://raw.githubusercontent.com/sarah-vanderlaan/star-wars-catalog/master/imgs/noMatchingSearch.png)
+
 
 ## Other Functionality:
 
 1) Ability to show/hide filter panel
-2) Navigate to characters from same planet via character profile page
+![alt text](https://raw.githubusercontent.com/sarah-vanderlaan/star-wars-catalog/master/imgs/filterSectionClosed.png)
+2) Navigate to characters from same planet via character profile page by clicking names of friends
 3) Search for a character (searches based on if search term is contained in **any part** of the character name)
-4) Sort character list in four different ways
+![alt text](https://raw.githubusercontent.com/sarah-vanderlaan/star-wars-catalog/master/imgs/search.png)
+4) Sort character list in four different ways (Name asc/desc, Age asc/desc)
